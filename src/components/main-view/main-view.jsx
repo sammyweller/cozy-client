@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { GameCard } from "../game-card/game-card";
 import { GameView } from "../game-view/game-view";
+import Navigation from "../navigation-bar/navigation-bar"; 
 
 import "./main-view.scss";
 
@@ -31,20 +32,20 @@ export const MainView = () => {
 
   return (
     <BrowserRouter>
+    <Navigation />
       <Row className="main-view justify-content-md-center">
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <h1 className="title text-center" style={{ fontSize: "100px", color: "white", paddingBottom: "60px" }}>
+                <h1 className="title text-center" style={{ color: "white", paddingTop: "60px", paddingBottom: "60px" }}>
                   Cozy Gamer
                 </h1>
-                <p className="p-content" 
+                <p className="p-content " 
                   style={{
                     color: "white",
                     fontFamily: "'Quicksand', sans-serif",
-                    fontSize: "1.6rem",
                     paddingBottom: "60px"
                      }} 
                      >Step into the peaceful world of cozy games: where we like to craft, farm, forage, explore, and relax. Absolutely NO zombies, shooters, violence, or stress allowed! 

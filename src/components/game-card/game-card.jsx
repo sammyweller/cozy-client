@@ -22,7 +22,7 @@ export const GameCard = ({ game }) => {
           src={game.image} />
       </Link>
       <Card.Body className="card-body">
-        <Card.Title style={{ paddingBottom: "40px" }}>{game.title}</Card.Title>
+        <Card.Title className="card-title" style={{ paddingBottom: "40px", fontSize: "1.4rem" }}>{game.title}</Card.Title>
         <Link to={`/games/${encodeURIComponent(game.id)}`}>
           <Button className="open-button"
             style={{

@@ -4,12 +4,37 @@ h1 {
 
 }
 
-
 .pixel-heart {
     width: 40px;
     margin-left: 5px;
 }
 
+.p-content {
+    font-size: 1.6rem;
+}
+
+.title {
+    font-size: 6rem;
+}
 
 
 /* small breakpoint: 576px */
+
+@media all and (max-width: 576px) {
+
+    body {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .title {
+        font-size: 4.2rem;
+    }
+
+    .p-content {
+        font-size: 1.4rem;
+    }
+}
+
+
+@import '~bootstrap/scss/bootstrap.scss';

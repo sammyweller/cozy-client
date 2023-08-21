@@ -46837,6 +46837,7 @@ const GameView = ({ games })=>{
                 className: "title text-center",
                 style: {
                     color: "white",
+                    paddingTop: "60px",
                     paddingBottom: "60px"
                 },
                 children: "Cozy Gamer"

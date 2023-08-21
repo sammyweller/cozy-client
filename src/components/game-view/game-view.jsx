@@ -24,7 +24,7 @@ export const GameView = ({ games }) => {
 
     return (
         <div>
-            <h1 className="title text-center" style={{ color: "white", paddingBottom: "60px" }}>
+            <h1 className="title text-center" style={{ color: "white", paddingTop: "60px", paddingBottom: "60px" }}>
                 Cozy Gamer
             </h1>
             <div className="game-view">

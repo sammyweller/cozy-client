@@ -27181,8 +27181,6 @@ var _col = require("react-bootstrap/Col");
 var _colDefault = parcelHelpers.interopDefault(_col);
 var _gameCard = require("../game-card/game-card");
 var _gameView = require("../game-view/game-view");
-var _navigationBar = require("../navigation-bar/navigation-bar");
-var _navigationBarDefault = parcelHelpers.interopDefault(_navigationBar);
 var _mainViewScss = require("./main-view.scss");
 var _s = $RefreshSig$();
 const MainView = ()=>{
@@ -27204,47 +27202,57 @@ const MainView = ()=>{
         });
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationBarDefault.default), {}, void 0, false, {
-                fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 35,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
-                className: "main-view justify-content-md-center",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
+            className: "main-view justify-content-md-center",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title-container",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                         className: "title text-center",
                                         style: {
                                             color: "white",
-                                            paddingTop: "60px",
-                                            paddingBottom: "60px"
-                                        },
-                                        children: "Cozy Gamer"
-                                    }, void 0, false, void 0, void 0),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "p-content ",
-                                        style: {
-                                            color: "white",
-                                            fontFamily: "'Quicksand', sans-serif",
-                                            paddingBottom: "60px"
+                                            paddingTop: "60px"
                                         },
                                         children: [
-                                            "Step into the peaceful world of cozy games: where we like to craft, farm, forage, explore, and relax. Absolutely NO zombies, shooters, violence, or stress allowed!",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                className: "pixel-heart",
-                                                alt: "pixel hearts",
-                                                src: "https://clipart-library.com/images_k/tumblr-png-transparent-background/tumblr-png-transparent-background-23.png"
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                class: "sparkle-emoji",
+                                                children: "✨"
+                                            }, void 0, false, void 0, void 0),
+                                            " Cozy Gamer ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                class: "sparkle-emoji",
+                                                children: "✨"
                                             }, void 0, false, void 0, void 0)
                                         ]
-                                    }, void 0, true, void 0, void 0),
-                                    games.map((game)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
-                                            className: "mb-5 justify-content-md-center",
+                                    }, void 0, true, void 0, void 0)
+                                }, void 0, false, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "p-content text-center",
+                                    style: {
+                                        color: "white",
+                                        fontFamily: "'Quicksand', sans-serif",
+                                        paddingBottom: "60px",
+                                        paddingTop: "40px",
+                                        maxWidth: "850px"
+                                    },
+                                    children: [
+                                        "Step into the peaceful world of cozy games: where we like to craft, farm, forage, explore, and relax. Absolutely NO zombies, shooters, violence, or stress allowed!",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "pixel-heart",
+                                            alt: "pixel hearts",
+                                            src: "https://clipart-library.com/images_k/tumblr-png-transparent-background/tumblr-png-transparent-background-23.png"
+                                        }, void 0, false, void 0, void 0)
+                                    ]
+                                }, void 0, true, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
+                                    className: "justify-content-center",
+                                    children: games.map((game)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
+                                            className: "mb-5 ",
                                             xs: 12,
                                             sm: 12,
                                             md: 6,
@@ -27254,46 +27262,46 @@ const MainView = ()=>{
                                                 game: game
                                             }, void 0, false, void 0, void 0)
                                         }, game.id, false, void 0, void 0))
-                                ]
-                            }, void 0, true)
-                        }, void 0, false, {
-                            fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/games/:gameId",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
-                                xs: 12,
-                                sm: 12,
-                                md: 10,
-                                lg: 8,
-                                xl: 8,
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _gameView.GameView), {
-                                    games: games
                                 }, void 0, false, void 0, void 0)
+                            ]
+                        }, void 0, true)
+                    }, void 0, false, {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 36,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/games/:gameId",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
+                            xs: 12,
+                            sm: 12,
+                            md: 10,
+                            lg: 8,
+                            xl: 8,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _gameView.GameView), {
+                                games: games
                             }, void 0, false, void 0, void 0)
-                        }, void 0, false, {
-                            fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 62,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/main-view/main-view.jsx",
-                    lineNumber: 37,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                        }, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 80,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 36,
-                columnNumber: 7
+                lineNumber: 35,
+                columnNumber: 5
             }, undefined)
-        ]
-    }, void 0, true, {
+        }, void 0, false, {
+            fileName: "src/components/main-view/main-view.jsx",
+            lineNumber: 34,
+            columnNumber: 3
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 34,
-        columnNumber: 5
+        lineNumber: 33,
+        columnNumber: 1
     }, undefined);
 };
 _s(MainView, "Qv+Imzbbm47aMqW5lWWxooDvX6M=");
@@ -27306,7 +27314,7 @@ $RefreshReg$(_c, "MainView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","../game-card/game-card":"3p24S","../game-view/game-view":"foMLl","../navigation-bar/navigation-bar":"bsPVM","./main-view.scss":"eBaMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","../game-card/game-card":"3p24S","../game-view/game-view":"foMLl","./main-view.scss":"eBaMl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.14.2
  *
@@ -34242,7 +34250,7 @@ var _reactRouterDom = require("react-router-dom");
 var _gameCardScss = require("./game-card.scss");
 const GameCard = ({ game })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
-        className: "h-100 game-card",
+        className: "h-100 game-card hover-effect ",
         style: {
             border: "0px solid rgba(0, 0, 0, 0)",
             borderRadius: "40px",
@@ -34270,48 +34278,30 @@ const GameCard = ({ game })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Body, {
-                className: "card-body",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Title, {
+                className: "card-body hover-effect",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: `/games/${encodeURIComponent(game.id)}`,
+                    className: "no-text-decoration text-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Title, {
                         className: "card-title",
                         style: {
-                            paddingBottom: "40px",
-                            fontSize: "1.4rem"
+                            paddingBottom: "10px",
+                            paddingTop: "10px",
+                            fontSize: "1.4rem",
+                            color: "white"
                         },
                         children: game.title
-                    }, void 0, false, {
-                        fileName: "src/components/game-card/game-card.jsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: `/games/${encodeURIComponent(game.id)}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
-                            className: "open-button",
-                            style: {
-                                borderRadius: "40px",
-                                backgroundColor: "#C5EDF2",
-                                color: "#2F3A6B",
-                                border: "none",
-                                fontSize: "0.8rem",
-                                position: "absolute",
-                                left: "15px",
-                                bottom: "15px",
-                                fontFamily: "'Quicksand', sans-serif"
-                            },
-                            children: "Open"
-                        }, void 0, false, {
-                            fileName: "src/components/game-card/game-card.jsx",
-                            lineNumber: 27,
-                            columnNumber: 11
-                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/game-card/game-card.jsx",
                         lineNumber: 26,
                         columnNumber: 9
                     }, undefined)
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "src/components/game-card/game-card.jsx",
+                    lineNumber: 25,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/game-card/game-card.jsx",
                 lineNumber: 24,
                 columnNumber: 7
@@ -47154,102 +47144,6 @@ $RefreshReg$(_c, "GameView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./game-view.scss":"aI1Jn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aI1Jn":[function() {},{}],"bsPVM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$abf5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$abf5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _container = require("react-bootstrap/Container");
-var _containerDefault = parcelHelpers.interopDefault(_container);
-var _nav = require("react-bootstrap/Nav");
-var _navDefault = parcelHelpers.interopDefault(_nav);
-var _reactRouterDom = require("react-router-dom");
-var _navbar = require("react-bootstrap/Navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _navigationBarScss = require("./navigation-bar.scss");
-function Navigation() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {
-        className: "nav-bar",
-        styyle: {
-            border: "0px solid rgba(0, 0, 0, 0)",
-            backgroundColor: "rgba(0, 0, 0, 0)"
-        },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containerDefault.default), {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default), {
-                className: "nav-links ms-auto",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                        style: {
-                            fontFamily: "'Lilita One', cursive;",
-                            color: "#C5EDF2",
-                            fontWeight: "700"
-                        },
-                        as: (0, _reactRouterDom.Link),
-                        to: "/",
-                        children: "Home"
-                    }, void 0, false, {
-                        fileName: "src/components/navigation-bar/navigation-bar.jsx",
-                        lineNumber: 17,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                        style: {
-                            color: "#C5EDF2",
-                            fontWeight: "700"
-                        },
-                        as: (0, _reactRouterDom.Link),
-                        to: "https://www.linkedin.com/in/sammy-weller/",
-                        children: "LinkedIn"
-                    }, void 0, false, {
-                        fileName: "src/components/navigation-bar/navigation-bar.jsx",
-                        lineNumber: 18,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navDefault.default).Link, {
-                        style: {
-                            color: "#C5EDF2",
-                            fontWeight: "700"
-                        },
-                        as: (0, _reactRouterDom.Link),
-                        to: "https://github.com/sammyweller",
-                        children: "GitHub"
-                    }, void 0, false, {
-                        fileName: "src/components/navigation-bar/navigation-bar.jsx",
-                        lineNumber: 19,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/navigation-bar/navigation-bar.jsx",
-                lineNumber: 16,
-                columnNumber: 11
-            }, this)
-        }, void 0, false, {
-            fileName: "src/components/navigation-bar/navigation-bar.jsx",
-            lineNumber: 15,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "src/components/navigation-bar/navigation-bar.jsx",
-        lineNumber: 10,
-        columnNumber: 5
-    }, this);
-}
-_c = Navigation;
-exports.default = Navigation;
-var _c;
-$RefreshReg$(_c, "Navigation");
-
-  $parcel$ReactRefreshHelpers$abf5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-bootstrap/Container":"hEdsw","react-bootstrap/Nav":"cXyL2","react-router-dom":"9xmpe","react-bootstrap/Navbar":"1mHjo","./navigation-bar.scss":"dnXvl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dnXvl":[function() {},{}],"eBaMl":[function() {},{}],"lJZlQ":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequired8e8")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./game-view.scss":"aI1Jn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aI1Jn":[function() {},{}],"eBaMl":[function() {},{}],"lJZlQ":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequired8e8")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

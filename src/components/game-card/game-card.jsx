@@ -6,7 +6,7 @@ import "./game-card.scss";
 
 export const GameCard = ({ game }) => {
   return (
-    <Card className="h-100 game-card"
+    <Card className="h-100 game-card hover-effect "
       style={{
         border: "0px solid rgba(0, 0, 0, 0)",
         borderRadius: "40px",
@@ -21,23 +21,9 @@ export const GameCard = ({ game }) => {
           variant="top"
           src={game.image} />
       </Link>
-      <Card.Body className="card-body">
-        <Card.Title className="card-title" style={{ paddingBottom: "40px", fontSize: "1.4rem" }}>{game.title}</Card.Title>
-        <Link to={`/games/${encodeURIComponent(game.id)}`}>
-          <Button className="open-button"
-            style={{
-              borderRadius: "40px",
-              backgroundColor: "#C5EDF2",
-              color: "#2F3A6B",
-              border: "none",
-              fontSize: "0.8rem",
-              position: "absolute",
-              left: "15px",
-              bottom: "15px",
-              fontFamily: "'Quicksand', sans-serif"
-            }}>
-            Open
-          </Button>
+      <Card.Body className="card-body hover-effect">
+      <Link to={`/games/${encodeURIComponent(game.id)}`} className="no-text-decoration text-center">
+        <Card.Title className="card-title" style={{ paddingBottom: "10px", paddingTop: "10px", fontSize: "1.4rem", color: "white" }}>{game.title}</Card.Title>
         </Link>
       </Card.Body>
     </Card>

@@ -18,6 +18,36 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+.game-card:hover,
+.game-card:hover .card-body {
+  background-color: rgb(57, 32, 163, 1); /* Change to the desired hover color */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 0px 10px #4326A3;
+}
+
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ 
+
+
+@media all and (max-width: 770px) {
+
+  .game-card {
+      margin-left: 20px;
+  }
+
+}
+
 
 
 @media all and (max-width: 576px) {
@@ -34,4 +64,11 @@
     font-size: 1.2rem;
   }
 
+}
+
+
+@media all and (max-width: 400px) {
+  .card-image {
+    height: 250px;
+  }
 }
